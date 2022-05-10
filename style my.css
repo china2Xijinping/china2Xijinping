@@ -1,0 +1,132 @@
+@charset "utf-8"
+@import url(normalize.css);
+
+/*字體顏色設定*/
+body{
+    color: rgb(41, 108, 150);
+}
+
+/*主標題設定*/
+h1{
+    width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 5px  solid #ffffff;
+    color: rgb(255, 255, 255);
+    font-size: 300%;
+    text-align: center;
+    line-height: 1;  
+}
+
+/*次標題設定*/
+h2{
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted #1109aa;
+    border-left: 10px solid #000000;
+    color: #4ab084;
+}
+
+/*logo設定*/
+h1{
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(26, 26, 26, 0.5);
+    background-image: linear-gradient(to bottom, #68c0d6, #3d808a);
+    font-family: "Limelight",cursive;
+}
+
+/*內容區塊設定*/
+#contents {
+    width: 798px;
+    margin: 40px auto;
+    padding: 40px 80px;
+    border: 1px solid #000000;
+    background-color: #fff;
+}
+
+/*置中對齊*/
+h1,header,nav,footer{   
+  text-align: center;
+}
+
+/*連結設定*/
+a{
+    color: #3700ff;
+}
+
+a:hover{
+    color: #fa2100;
+    text-decoration: none;
+}
+
+/*更多介紹圖示*/
+.more{
+    text-align: right;
+}
+.more::after{
+    content: url(img/ico_arrow.png);
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+
+/*信箱圖示*/
+a[href^="mailto:"]::after{
+    content: url(img/ico_mail.png);
+    margin-left: 5px;
+    vertical-align:middle;
+}    
+
+/*背景圖*/
+body{
+    background-color: #69696538;
+    background-image: url(img/城市.jpg);
+    background-repeat: repeat-x;
+}
+
+/*選單設定*/
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 180px;
+    margin: 0 10px;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px;
+    background: #0d0e0d54;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    background: #4f5351;
+  }
+
+ /*文繞圖設定*/
+  .imgL {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .imgR {
+    float: right;
+    margin-left: 20px;
+  }
+
+  /*屬性解除*/
+  .clear {
+    clear: both;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .img-round {
+    border-radius: 50%;
+  }
